@@ -11,7 +11,8 @@ Release: %{release}
 Group: Test Environment/Libraries
 License: GPL
 Vendor:Oracle
-Source: %{name}-%{version}.tar.gz
+Source: https://github.com/genebean/oracle-rdbms-server-11gR2-preinstall/downloads/%{name}-%{version}.tar.gz
+URL:    https://github.com/genebean/oracle-rdbms-server-11gR2-preinstall
 
 Provides: %{name} = %{version}
 
@@ -108,6 +109,7 @@ fi
       - Commented out call to f_createuser in 
         oracle-rdbms-server-11gR2-preinstall-verify
         for compatibility with PBIS.
+      - Added GitHub URL and Source to the SPEC file
 
 * Thu Jun 07 2012 Gurudas Pai <gurudas.pai@oracle.com> [1.0-6.el6]
       - fixed comment in sysctl.conf

@@ -21,7 +21,7 @@ PreReq:/etc/redhat-release
 Requires:procps module-init-tools ethtool initscripts 
 Requires:bc bind-utils nfs-utils util-linux-ng pam
 Requires:xorg-x11-utils xorg-x11-xauth 
-Requires:kernel-uek
+#Requires:kernel-uek
 Requires:smartmontools
 
 

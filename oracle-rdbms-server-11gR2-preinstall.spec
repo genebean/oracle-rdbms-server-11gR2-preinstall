@@ -1,6 +1,6 @@
 %define name oracle-rdbms-server-11gR2-preinstall 
 %define version 1.0
-%define release 6.el6
+%define release 6.01.el6
 
 
 
@@ -103,6 +103,12 @@ fi
 /etc/rc.d/init.d/oracle-rdbms-server-11gR2-preinstall-firstboot
 
 %changelog
+* Tue Dec 11 2012 Gene Liverman <gliverma@westga.edu> - [1.0-6.01.el6]
+      - Removed requirement for Oracle's kernel
+      - Commented out call to f_createuser in 
+        oracle-rdbms-server-11gR2-preinstall-verify
+        for compatibility with PBIS.
+
 * Thu Jun 07 2012 Gurudas Pai <gurudas.pai@oracle.com> [1.0-6.el6]
       - fixed comment in sysctl.conf
 

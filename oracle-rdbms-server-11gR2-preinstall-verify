@@ -714,14 +714,14 @@ mkdir --mode 0700 -p ${TEST_LOG_LOC};
 
 mkdir --mode 0700 -p ${BACKUP_DIR};
 
-f_createuser;
-if [ $? -ne 0 ]; then
-	echo "Creating oracle user failed " >> ${PRE_PARAM_LOG}
-	echo "" >> ${PRE_PARAM_LOG}
-else
-	echo "Creating oracle user passed " >> ${PRE_PARAM_LOG}
-	echo "" >> ${PRE_PARAM_LOG}
-fi;
+#f_createuser;
+#if [ $? -ne 0 ]; then
+#	echo "Creating oracle user failed " >> ${PRE_PARAM_LOG}
+#	echo "" >> ${PRE_PARAM_LOG}
+#else
+#	echo "Creating oracle user passed " >> ${PRE_PARAM_LOG}
+#	echo "" >> ${PRE_PARAM_LOG}
+#fi;
 
 
 #This variable determines if the changes need to be effected on the system
